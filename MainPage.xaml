@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="practica08.MainPage"
+             BackgroundColor="#F0F2F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="20">
+
+            <!-- Encabezado -->
+            <Label Text="Bienvenido a la aplicación"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <BoxView HeightRequest="2"/>
+
+            <!-- Tarjeta 1 -->
+            <Border Stroke="#DDDDDD"
+                    StrokeThickness="1"
+                    BackgroundColor="White"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="20"
+                    >
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Información general"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#1E88E5" />
+                    <Label Text="Esta aplicación ha sido desarrollada como parte de la práctica 08 en .NET MAUI. Pruebe a crear una galería o cambiar la configuración, por favor."
+                           FontSize="14"
+                           TextColor="#444444" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Tarjeta 2 -->
+            <Border Stroke="#DDDDDD"
+                    StrokeThickness="1"
+                    BackgroundColor="White"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="20"
+                    >
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Estado actual"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#43A047" />
+                    <Label Text="Sesión iniciada correctamente. Acceso autorizado al menú."
+                           FontSize="14"
+                           TextColor="#444444" />
+                </VerticalStackLayout>
+            </Border>
+            
+            <Button Text="Ir a Galerias"
+                    BackgroundColor="Azure"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="IrAGaleriaClicked" 
+                    HorizontalOptions="Center"
+                    WidthRequest="200"/>
+
+            <Button Text="Ir a Configuración"
+                    BackgroundColor="Azure"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="IrAConfigClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"/>
+
+            <Button Text="Ir a Añadir Galería"
+                    BackgroundColor="Azure"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                   Clicked="IrACrearGaleriaClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"/>
+
+            <!-- Botón de cerrar sesión -->
+            <Button Text="Cerrar sesión"
+                    BackgroundColor="#E53935"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="OnLogoutClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

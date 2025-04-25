@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="practica08.CreadorDeGalerias"
+             Title="CreadorDeGalerias">
+    <StackLayout Padding="20" Spacing="20">
+        <Label Text="Selecciona los animales que quieras agregar:" FontSize="18" HorizontalOptions="Center"/>
+
+        <Label Text="Perro"/>
+        <CheckBox x:Name="checkPerro" />
+        <Label Text="Gato"/>
+        <CheckBox x:Name="checkGato" />
+        <Label Text="Elefante"/>
+        <CheckBox x:Name="checkElefante" />
+        <Label Text="Leon"/>
+        <CheckBox x:Name="checkLeon" />
+        <Label Text="Caballo"/>
+        <CheckBox x:Name="checkCaballo" />
+
+        <Button Text="Crear Galería" Clicked="OnSeleccionarAnimales"/>
+    </StackLayout>
+</ContentPage>
